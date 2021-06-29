@@ -1,0 +1,62 @@
+gcloud auth login
+
+C:\CAP_Learning\GitRepo\Final_Demo\ClientApp\deploy>gcloud app deploy app.standard.yaml
+
+
+Services to deploy:
+
+descriptor:      [C:\CAP_Learning\GitRepo\Final_Demo\ClientApp\deploy\app.standard.yaml]
+source:          [C:\CAP_Learning\GitRepo\Final_Demo\ClientApp\deploy]
+target project:  [ingka-pd-crse-dev]
+target service:  [default]
+target version:  [20210628t215115]
+target url:      [https://ingka-pd-crse-dev.ew.r.appspot.com]
+
+
+ServerApp:
+
+C:\CAP_Learning\GitRepo\Final_Demo\ClientApp\deploy>cd C:\CAP_Learning\GitRepo\Final_Demo\ServerApp\
+C:\CAP_Learning\GitRepo\Final_Demo\ServerApp>gcloud app deploy app.standard.yaml --quiet
+
+C:\CAP_Learning\GitRepo\Final_Demo\ServerApp>gcloud app deploy app.standard.yaml --quiet
+Services to deploy:
+
+descriptor:      [C:\CAP_Learning\GitRepo\Final_Demo\ServerApp\app.standard.yaml]
+source:          [C:\CAP_Learning\GitRepo\Final_Demo\ServerApp]
+target project:  [ingka-pd-crse-dev]
+target service:  [todo-api]
+target version:  [20210628t220420]
+target url:      [https://todo-api-dot-ingka-pd-crse-dev.ew.r.appspot.com]
+
+
+Beginning deployment of service [todo-api]...
+Created .gcloudignore file. See `gcloud topic gcloudignore` for details.
+#============================================================#
+#= Uploading 14 files to Google Cloud Storage               =#
+#============================================================#
+File upload done.
+Updating service [todo-api]...done.
+Setting traffic split for service [todo-api]...done.
+Deployed service [todo-api] to [https://todo-api-dot-ingka-pd-crse-dev.ew.r.appspot.com]
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s todo-api
+
+To view your application in the web browser run:
+  $ gcloud app browse -s todo-api
+
+Final:
+
+First BackEnd:
+ C:\CAP_Learning\GitRepo\Final_Demo\ServerApp> gcloud app deploy app.standard.yaml --quiet
+
+
+FrontEnd:
+C:\CAP_Learning\GitRepo\Final_Demo\ClientApp\deploy> gcloud app deploy .\app.standard.yaml --quiet
+
+
+https://todo-api-dot-ingka-pd-crse-dev.ew.r.appspot.com/todo
+
+https://frontend-dot-ingka-pd-crse-dev.ew.r.appspot.com
+
+

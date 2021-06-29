@@ -1,0 +1,20 @@
+{
+  "name": "npmruntime",
+  "version": "1.0.0",
+  "description": "a simple runtime in node",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "swagger-jsdoc": "6.0.0",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0",
+    "dotenv": "^8.2.0"
+  },
+  "type": "module"
+}
